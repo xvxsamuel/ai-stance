@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 500;
+  background: black;
+  color: #00FF00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+#video-container {
+  border: 2px solid #00FF00;
+  position: relative;
+  height: 480px;
+  width: 640px;
+  background: black;
+}
+
+#ai-button {
+  margin: 0;
+  position: absolute;
+  bottom: -97.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+  font-size: 25px;
+  display: none;
+  height: 56px;
+  width: 500px;
+}
+
+#console {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 605px;
+  width: 350px;
+  background: black;
+  border: 2px solid #00FF00;
+  padding: 10px;
+  box-sizing: border-box;
+  scrollbar-color: #00FF00 rgb(0, 80, 0);
+  scrollbar-width: thin;
+}
+
+#console-header {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #00FF00;
+}
+
+#console-log-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-grow: 1;
+  max-height: 400px;
+  padding-right: 10px;
+}
+
+.console-message {
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  transition: color 0.3s ease;
+  color: rgb(0, 255, 0);
+}
+
+
+#robot-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#robot-image {
+  height: 100px;
+  width: auto;
+  transition: opacity 0.5s ease;
+}
+
+button {
+  font-family: 'Source Code Pro', monospace;
+  background-color: black;
+  color: #00FF00;
+  border: 2px solid #00FF00;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #00FF00;
+  color: black;
+}
